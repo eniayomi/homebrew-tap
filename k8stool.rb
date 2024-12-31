@@ -5,20 +5,20 @@
 class K8stool < Formula
   desc "A command-line tool for managing Kubernetes resources"
   homepage "https://github.com/eniayomi/k8stool"
-  version "0.1.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/eniayomi/k8stool/releases/download/v0.1.1/k8stool_Darwin_x86_64.tar.gz"
-      sha256 "b51cbd1a8a795f3f9154012a532a4ebc9faf0ae74a7c4927f450c1c4f92bf224"
+      url "https://github.com/eniayomi/k8stool/releases/download/v0.2.2/k8stool_Darwin_x86_64.tar.gz"
+      sha256 "b71c7d29c990cd0174e5e1cd5cd96ca96eea61ab64ff6874d27fef32c00b1f3c"
 
       def install
         bin.install "k8stool"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/eniayomi/k8stool/releases/download/v0.1.1/k8stool_Darwin_arm64.tar.gz"
-      sha256 "be80d6b6c5593b24bdaadc44bb998d7082396e04403ad8f1198c445fe757938c"
+      url "https://github.com/eniayomi/k8stool/releases/download/v0.2.2/k8stool_Darwin_arm64.tar.gz"
+      sha256 "f568c8dbf263d8a943a6668d100638808c712ccba7c594ce470c860126af192c"
 
       def install
         bin.install "k8stool"
@@ -29,8 +29,8 @@ class K8stool < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/eniayomi/k8stool/releases/download/v0.1.1/k8stool_Linux_x86_64.tar.gz"
-        sha256 "bba5fd4b7395b1f103500335f824f99cf4aa3299ee8b8fbcfaa36f48547a5fc7"
+        url "https://github.com/eniayomi/k8stool/releases/download/v0.2.2/k8stool_Linux_x86_64.tar.gz"
+        sha256 "a235d1f7b1b79b7da7f8574b24743f30abb25cffb45f5f999522273e1baee935"
 
         def install
           bin.install "k8stool"
@@ -39,8 +39,8 @@ class K8stool < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/eniayomi/k8stool/releases/download/v0.1.1/k8stool_Linux_arm64.tar.gz"
-        sha256 "0d31f2f61638a2c3edb12d349dcf2ed9f6800109489ef9a86936595e1953a8cf"
+        url "https://github.com/eniayomi/k8stool/releases/download/v0.2.2/k8stool_Linux_arm64.tar.gz"
+        sha256 "00ebbd123bb40f02eee5e1d4a42102639ed537ae7cc011da294a64d959ae6c97"
 
         def install
           bin.install "k8stool"
